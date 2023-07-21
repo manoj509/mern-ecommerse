@@ -10,7 +10,7 @@ app.use(cookieParser())
 app.use(express.json())
 app.use(express.static("public"))
 app.use(cors({
-    origin: "https://mern-ecommerse-production.up.railway.app",
+    origin: "https://mern-ecommerse.vercel.app",
     credentials: true
 }))
 app.use("/api/user", require("./routes/userRoutes"))
